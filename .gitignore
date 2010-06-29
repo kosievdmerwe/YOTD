@@ -1,0 +1,8 @@
+# Compiled source #
+###################
+*.o
+
+# Editor temp files #
+#####################
+*.swp
+
