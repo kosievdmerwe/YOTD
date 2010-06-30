@@ -3,9 +3,9 @@
 import sys
 
 if len(sys.argv) < 2:
-  print >>sys.stderr, ("Must pass file name as command line parameter ("+
-                      "excluding file type)")
-  sys.exit(0)
+    print >>sys.stderr, ("Must pass file name as command line parameter ("+
+                         "excluding file type)")
+    sys.exit(0)
 
 name = sys.argv[1]
 define_name = "__" + name.upper() + "_H__"

@@ -12,4 +12,16 @@ ERR_INVALID_WINDOW_STENCIL_BITS,
 ERR_INVALID_WINDOW_AA_LEVEL
 };
 
+#include <queue>
+
+class ErrorThrower {
+public:
+  virtual Error getError();
+  virtual bool hasError();
+  
+protected:
+  std::queue<Error> mErrors;
+  virtual void addError(Error error);
+};
+
 #endif//__ERRORS_H__
