@@ -4,7 +4,7 @@
 #include <string>
 #include <cstdint>
 
-#include "Errors.h"
+#include "ErrorThrower.h"
 #include "WindowMode.h"
 #include "WindowSettings.h"
 #include "WindowStyles.h"
